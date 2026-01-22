@@ -9,5 +9,7 @@
     "permissions": [
         "bookmarks",
         "favicon"
-    ]
+    ],
+    
+    "homepage_url": "https://hemmouda.com/chrome-bookmark-keys"  
 }
