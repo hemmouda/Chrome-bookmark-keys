@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Bookmark Keys",
+    "version": "0.1",
+    "description": "Let's you quickly open bar bookmarks using number keys on a custom New Tab page.",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "bookmarks",
+        "favicon"
+    ]
+}
