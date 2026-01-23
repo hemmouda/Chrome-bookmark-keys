@@ -34,7 +34,7 @@ function collectBookmarks(nodes) {
                     <div class="indexed">#order</div>
                     <div class="site">
                         <img src="chrome://favicon/website">
-                        Bookmark name
+                        <span>Bookmark name</span>
                     </div>
                 </a>
 
@@ -42,7 +42,7 @@ function collectBookmarks(nodes) {
                 <a class="bookmark" href="website">
                     <div class="site">
                         <img src="chrome://favicon/website">
-                        Bookmark name
+                        <span>Bookmark name</span>
                     </div>
                 </a>
             */
@@ -57,6 +57,7 @@ function collectBookmarks(nodes) {
                 const index = document.createElement("div");
                 index.className = "indexed";
                 index.textContent = `#${bookmarkLinks.length + 1}`;
+                index.title = `Press ${bookmarkLinks.length + 1} on your keyboard to go to ${node.title || node.url}`;
                 a.appendChild(index);
             }
 
@@ -66,10 +67,12 @@ function collectBookmarks(nodes) {
             const img = document.createElement("img");
             img.src = faviconURL(node.url)
 
-            const text = document.createTextNode(node.title || node.url);
+            const span = document.createElement("span")
+            span.textContent = node.title || node.url;
+            span.title = node.title || node.url;
 
             site.appendChild(img);
-            site.appendChild(text);
+            site.appendChild(span);
             a.appendChild(site);
 
             list.appendChild(a);
