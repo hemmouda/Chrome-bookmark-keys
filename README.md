@@ -13,7 +13,7 @@ $ git clone https://github.com/hemmouda/Chrome-bookmark-keys.git
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** (toggle in the top-right corner).
 4. Click **Load unpacked** and select the folder containing this extension.
-5. You will see a warning the first time you Open a new tab, choose to the extension manage your new tab. In the new tab you will see the bookmarks from your bookmark bar and can use number keys `1–9` to open them quickly.
+5. You will see a warning the first time you Open a new tab; choose to let the extension manage your new tab. In the new tab you will see the bookmarks from your bookmark bar and can use number keys `1–9` to open them quickly.
 
 When you open a new tab, the focus is automatically taken by the search bar. This is the normal intended behavior. To make it visually easy to tell when the focus is on the page (so that you can use the shortcuts), a blur effect is added when the page is out of focus.
 
